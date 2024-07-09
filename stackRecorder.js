@@ -150,14 +150,9 @@ function initializeScript()
 function invokeScript()
 {
 
-    // Add code here that you want to run every time the script is executed. 
-    // We will just send a message to indicate that function was called.
-	    //setBreakpointAndPrintStackTrace("aes_ni_256_e", "C:\\\\log\\\\callstack.txt");
-    //log("init");
-      //  log("base "+addr);
-        // log("Base "+host.evaluateExpression("KERNEL32!BaseThreadInitThunk"));
-	var filePath = "C:\\Users\\malam5\\source\\repos\\ConsoleApplication3\\kerberosbp.txt";
-    //var filePath = "C:\\Users\\malam5\\source\\repos\\ConsoleApplication3\\plink_debug_function";
+
+	var filePath = "<inputfile>";
+   
 	populateBpList(filePath);
 	for (var bp of bpList){
 		setBreakPoint(bp);
@@ -170,7 +165,7 @@ function uninitializeScript()
     // Add code here that you want to run every time the script is unloaded. 
     // We will just send a message to indicate that function was called.
     const jsonString = JSON.stringify(stackRoot.toJSON(), null, 2);
-    var logFile = "C:\\Users\\malam5\\source\\repos\\ConsoleApplication3\\kerberos_encrypt_stack.txt";
+    var logFile = "<outputfile>";
 
     //log(jsonString);
     fileWrite(jsonString,logFile);
