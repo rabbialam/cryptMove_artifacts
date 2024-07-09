@@ -14,22 +14,6 @@ start = time.time()
 print("current time",start)
 
 
-# In[20]:
-
-
-#file_name = "/Users/rabby/Downloads/curl-8.3.0_2-win64-mingw/bin/curl.exe"
-#argument = ['curl', 'https://learn.microsoft.com/en-us/azure/iot-central/core/howto-integrate-with-devops']
-
-
-# In[21]:
-
-
-#.    140040270->0x140093D20  
-#        0x140096A00 ->0x14004EEC0
-#      14000C3C0->0x140097CF0
-
-
-# In[22]:
 
 
 import logging
